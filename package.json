@@ -1,0 +1,31 @@
+{
+  "name": "storybooks",
+  "version": "1.0.0",
+  "description": "app to create story book for private and public",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js"
+  },
+  "author": "sekhar",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.0",
+    "mongoose": "^5.10.7",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  }
+}
