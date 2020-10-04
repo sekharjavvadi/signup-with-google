@@ -19,7 +19,9 @@ router.get('/',ensureGuest,(req,res) =>
 // get/dashboard
 router.get('/dashboard',ensureAuth,async (req,res)=>
 {
-    res.render('dashboard')
+        res.render('dashboard',{
+        displayname:req.user.displayname,
+    })
 })
 
 module.exports=router
